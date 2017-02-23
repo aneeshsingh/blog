@@ -1,0 +1,768 @@
+<!doctype html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <title>Lorem Ipsum | PublisherName</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <style amp-custom>
+
+   @font-face {
+      font-family: 'Neuton Light';
+      font-style: bold;
+      font-weight: 600;
+      src: url(fonts/Neuton-Light.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Neuton Extralight';
+      font-style: bold;
+      font-weight: 600;
+      src: url(fonts/Neuton-Extralight.ttf) format('truetype');
+    }  
+
+    @font-face {
+      font-family: 'Cinzel Regular';
+      font-style: normal;
+      font-weight: 400;
+      src: url(fonts/Cinzel-Regular.ttf) format('truetype');
+    }  
+
+    @font-face {
+      font-family: 'Sackers Gothic Heavy';
+      font-style: bold;
+      font-weight: 600;
+      src: url(fonts/Sackers Gothic Heavy.ttf) format('truetype');
+    }    
+
+    .as-amp-font-loaded {
+      font-family: 'Cinzel Regular', serif, sans-serif;
+    }
+
+    .as-amp-bold-font-loaded .as-amp-bold {
+      font-family: 'Neuton Light', serif, sans-serif;
+      color: #000;
+    }
+
+    .as-amp-extralight-font-loaded .as-amp-extralight {
+      font-family: 'Neuton Extralight', serif, sans-serif;
+      color: #000;
+    }
+
+    .as-amp-heading-font-loaded .as-amp-heading {
+      font-family: 'Sackers Gothic Heavy', serif, sans-serif;
+      color: #000;
+    }
+
+    h1 {
+      font-family: 'Sackers Gothic Heavy', serif, sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 40px;
+      letter-spacing: 1px;
+    }
+
+    p {
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: 0.34px;
+    margin-right: 10%;
+    margin-left: 10%;
+    }
+
+    .as-amp-font-loading {
+      color: #00f;
+    }
+
+    .as-amp-bold-font-loading .as-amp-bold {
+      color: #0ff;
+    }
+
+    .as-amp-heading-font-loading .as-amp-heading {
+      color: #0ff;
+    }    
+
+    .as-amp-extralight-font-loading .as-amp-extralight {
+      color: #0ff;
+    }  
+
+    .as-amp-font-missing,
+    .as-amp-bold-font-missing .as-amp-bold {
+      color: #f00;
+    }
+
+        .as-amp-font-missing,
+    .as-amp-heading-font-missing .as-amp-heading {
+      color: #f00;
+    }
+
+            .as-amp-font-missing,
+    .as-amp-extralight-font-missing .as-amp-extralight {
+      color: #f00;
+    }
+
+
+    body {
+      margin: 0;
+      font-family: 'Neuton Light', Serif;
+      backgro
+    }
+
+    .brand-logo {
+      font-family: 'Cinzel Regular';
+      text-align: center;
+font-size: 35px;
+    line-height: 75px;
+    letter-spacing: 6px;
+    }
+
+    .main_hr{
+    	    height: 3px;
+    background-color: #000;
+    }
+    .ad-container {
+      display: flex;
+      justify-content: center;
+    }
+
+
+    header,
+    .article-body {
+      padding: 15px;
+      
+    }
+
+    /* In the shadow-doc mode, the parent shell already has header and nav. */
+    .amp-shadow header {
+      display: none;
+    }
+
+    .lightbox {
+      background: #222;
+    }
+
+    .full-bleed {
+      margin: 0 -15px;
+    }
+
+    .lightbox-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox-content p {
+      color: #fff;
+      padding: 15px;
+    }
+
+    .lightbox amp-img {
+      width: 100%;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      color: #6f757a;
+      padding: 15px 0;
+      font-size: .9em;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+
+      background: #f4f4f4;
+      padding: 0 15px;
+
+      font-size: .8em;
+
+      border: solid #dcdcdc;
+      border-width: 1px 0;
+    }
+
+    .header-time {
+      color: #a8a3ae;
+      font-family: 'Sackers Gothic Heavy';
+      font-size: 12px;
+    }
+
+    .next_and_previous_article_links{
+    	      color: #a8a3ae;
+      font-family: 'Sackers Gothic Heavy';
+      font-size: 12px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .author p {
+      margin: 5px;
+    }
+
+    .byline {
+      font-family: 'Neuton-Light';
+      display: inline-block;
+    }
+
+    .byline p {
+      line-height: normal;
+    }
+
+    .byline .brand {
+      color: #6f757a;
+    }
+
+    .standfirst {
+      color: #6f757a;
+      font-family: 'Sackers Gothic Heavy';
+      font-size: 12px;
+      text-transform: uppercase;      
+      line-height: 30px;
+    }
+
+    .mailto {
+      text-decoration: none;
+    }
+
+    .header-class{
+    	text-align: center;
+    }
+    #author-avatar {
+      margin: 10px;
+      border: 5px solid #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin: 5px 0;
+      font-weight: normal;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 226px;
+      background: #f4f4f4;
+      margin-bottom: 20px;
+    }
+
+    hr {
+      margin: 0;
+    }
+
+    .article-container{
+      max-width: 1000px;
+       margin: 0 auto;
+    }
+    amp-app-banner {
+      padding: 10px;
+    }
+
+    amp-app-banner .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    amp-img {
+      background-color: #f4f4f4;
+    }
+
+    .slot-fallback {
+      padding: 16px;
+      background: yellow;
+    }
+
+    amp-app-banner amp-img {
+      background-color: transparent;
+      margin-right: 15px
+    }
+
+    amp-app-banner .description {
+      margin-right: 20px;
+    }
+
+    amp-app-banner h5 {
+      margin: 0;
+    }
+
+    amp-app-banner p {
+      font-size: 10px;
+      margin: 3px 0;
+    }
+
+    amp-app-banner .actions button {
+      padding: 5px;
+      width: 70px;
+      border: 1px solid #aaa;
+      font-size: 8px;
+      background: #fff;
+    }
+    }
+    amp-app-banner .actions {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    amp-sidebar {
+      width: 150px;
+    }
+
+
+    p.first_para::first-letter {
+    font-size: 400%;
+    color: #000000;
+}
+
+    #navlist li {
+display: inline;
+list-style-type: none;
+padding-right: 10%;
+    }
+#navlist-new li {
+display: inline;
+list-style-type: none;
+padding-right: 10px;
+ font-family: 'Sackers Gothic Heavy';
+     letter-spacing: 2px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .menu_nav{
+    text-decoration: none;
+    color: black;
+    }
+
+
+    
+  </style>
+
+  <script type="application/ld+json">
+        //
+        // The document referenced in mainEntityOfPage should be the same as the
+        // canonical link above.
+        //
+        // Also, please be aware that some platforms that use AMP HTML have
+        // further restrictions with regards to some schema components.
+        //
+        // For example:
+        //
+        //   * The leader "image" referenced in the markup below must appear
+        //   somewhere on the AMP HTML document itself.
+        //
+        //   * The URL for that "image" must precisely match the src of the
+        //   amp-img tag.
+        //
+        //   * All marked-up URLs should be absolute.
+        //
+        //   * The "logo" dimensions must not exceed 600x60.
+        //
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": "http://example.ampproject.org/article-metadata.html",
+        "headline": "Lorem Ipsum",
+        "datePublished": "1907-05-05T12:02:41Z",
+        "dateModified": "1907-05-05T12:02:41Z",
+        "description": "The Catiline Orations continue to begule engineers and designers alike -- but can it stand the test of time?",
+        "author": {
+          "@type": "Person",
+          "name": "Jordan M Adler"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Google",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "http://cdn.ampproject.org/logo.jpg",
+            "width": 600,
+            "height": 60
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://cdn.ampproject.org/leader.jpg",
+          "height": 2000,
+          "width": 800
+        }
+      }
+    </script>
+
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <link rel="manifest" href="medium-manifest.json">
+</head>
+<body>
+
+<style>
+
+</style>
+ <div class="header-class article-container">
+  <header>
+    <span class="brand-logo">
+      ANEESH SINGH
+    </span>
+
+    <ul id="navlist">
+<li id="active"><a href="#" id="current">Home</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+<style>
+
+@media only screen and (max-width: 960px) {
+    #article_text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #img_previous_article_thumb {
+        display: none;
+    }
+        #img_next_article_thumb {
+        display: none;
+    }
+}
+
+</style>
+
+  <hr class="main_hr" />
+
+<div class="next_and_previous_article_links">
+  <div style="float: left;width: 60px;text-align: right;padding-right: 10px; ">
+  	          <figure>
+             <amp-img id="img_previous_article_thumb" src="https://lh4.googleusercontent.com/-okOlNNHeoOc/VbYyrlFYFII/AAAAAAABYdA/La-3j3c-QQI/w2004-h734-no/PANO_20150726_171347%257E2.jpg" width=60 height=40></amp-img>
+          </figure>
+
+  </div>
+  <div style="float: left;width: 180px;text-align: left;font-size: .8em;line-height: 14px;">
+  <span stlye="color:#333; font-size:0.7em;line-height:17px;">PREVIOUS ARTICLE</span><br/><a href="#" style="text-decoration: none; color: #000">SEVEN NEW CITY HOTELS TO BOOK</a></div>
+  <div id="article_text" style="float: left;width: 45%;"><a href="#" style="text-decoration: none; color: #000"><br/>ARTICLES</a></div>
+
+    <div style="float: right;width: 60px;text-align: left;padding-left: 10px;">
+  	        <figure>
+            <amp-img id="img_next_article_thumb" src="https://lh4.googleusercontent.com/-okOlNNHeoOc/VbYyrlFYFII/AAAAAAABYdA/La-3j3c-QQI/w2004-h734-no/PANO_20150726_171347%257E2.jpg" width=60 height=40></amp-img>
+          </figure>
+  </div>
+
+  <div style="float: right;width: 180px;text-align: right;font-size: .8em;line-height: 14px;">
+  <span stlye="color:#333; font-size:0.7em;line-height:17px;">NEXT ARTICLE</span><br/>
+  <a href="#" style="text-decoration: none; color: #000">SEVEN NEW CITY HOTELS TO BOOK</a></div>
+
+
+</div>
+
+    <hr class="navigation_hr" style="margin-top: 40px" />
+  </header>
+</div>
+  <main role="main">
+    <article class="article-container">
+            <header style="text-align: center;">
+          <h1 itemprop="headline">SEVEN NEW CITY HOTELS TO BOOK NOW
+
+</h1>
+<!--  <h2 class="standfirst">
+            Fusce pretium tempor justo, vitae consequat dolor maximus eget.
+          </h2> -->
+          <time class="header-time" itemprop="datePublished"
+              datetime="2015-09-14 13:00">September 14, 2015</time>
+         
+        </header>
+      <figure>
+        <amp-img
+            src="img/hero@1x.jpg"
+            srcset="img/hero@1x.jpg 1x, img/hero@2x.jpg 2x"
+            layout="responsive" width="360" placeholder
+            heights="(min-width:1420px) 60%, (min-width:1320px) 25%, (min-width:1000px) 40%, (min-width:760px)  85%, (min-width:500px) 100%, 120%"            
+            alt="Picture of two chairs on a lake shore with big pine trees"
+            title="Opens image in a lightbox"
+            height="216" tabindex="0">
+        </amp-img>
+         <figcaption style="text-align: center">
+              Fusce pretium tempor justo, vitae consequat dolor maximus eget.
+            </figcaption>
+      </figure>
+      
+
+      <div class="content-container">
+
+        <div class="article-body" itemprop="articleBody">
+
+
+<style>
+.pid-list {
+    overflow: hidden;
+    text-align: center;
+}
+
+.pid-list h3:before {
+    border-top: 1px solid #ccc;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+.pid-list h3 span {
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 8px 28px;
+    text-transform: uppercase;
+    font-family: 'Sackers Gothic Heavy';
+}
+
+.pid-list h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 0.82353em;
+    line-height: 2.14286em;
+    margin: 0;
+}
+</style>
+
+<div class="full pid-list type-2" id="pidList">
+
+		<h3>
+					<span class="pid-list-span-text" itemscope itemtype="http://schema.org/Person"
+              itemprop="author">
+						Words by Aneesh Singh
+					</span>
+		</h3>
+
+
+</div>
+
+          <p class="first_para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur ullamcorper turpis vel commodo scelerisque. Phasellus
+            luctus nunc ut elit cursus, et imperdiet diam vehicula.
+            Duis et nisi sed urna blandit bibendum et sit amet erat.
+            Suspendisse potenti. Curabitur consequat volutpat arcu nec
+            elementum. Etiam a turpis ac libero varius condimentum.
+            Maecenas sollicitudin felis aliquam tortor vulputate,
+            ac posuere velit semper.
+          </p>
+          <p>
+            Fusce pretium tempor justo, vitae consequat dolor maximus eget.
+            Aliquam iaculis tincidunt quam sed maximus. Suspendisse faucibus
+            ornare sodales. Nullam id dolor vitae arcu consequat ornare a
+            et lectus. Sed tempus eget enim eget lobortis.
+            Mauris sem est, accumsan sed tincidunt ut, sagittis vel arcu.
+            Nullam in libero nisi.
+          </p>
+          <p>
+            Sed pharetra semper fringilla. Nulla fringilla, neque eget
+            varius suscipit, mi turpis congue odio, quis dignissim nisi
+            nulla at erat. Duis non nibh vel erat vehicula hendrerit eget
+            vel velit. Donec congue augue magna, nec eleifend dui porttitor
+            sed. Cras orci quam, dignissim nec elementum ac, bibendum et purus.
+            Ut elementum mi eget felis ultrices tempus. Maecenas nec sodales
+            ex. Phasellus ultrices, purus non egestas ullamcorper, felis
+            lorem ultrices nibh, in tristique mauris justo sed ante.
+            Nunc commodo purus feugiat metus bibendum consequat. Duis
+            finibus urna ut ligula auctor, sed vehicula ex aliquam.
+            Sed sed augue auctor, porta turpis ultrices, cursus diam.
+            In venenatis aliquet porta. Sed volutpat fermentum quam,
+            ac molestie nulla porttitor ac. Donec porta risus ut enim
+            pellentesque, id placerat elit ornare.
+          </p>
+          <p id="section1">
+            Curabitur convallis, urna quis pulvinar feugiat, purus diam
+            posuere turpis, sit amet tincidunt purus justo et mi. Donec
+            sapien urna, aliquam ut lacinia quis, varius vitae ex.
+            Maecenas efficitur iaculis lorem, at imperdiet orci viverra
+            in. Nullam eu erat eu metus ultrices viverra a sit amet leo.
+            Pellentesque est felis, pulvinar mollis sollicitudin et,
+            suscipit eget massa. Nunc bibendum non nunc et consequat.
+            Quisque auctor est vel leo faucibus, non faucibus magna ultricies.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Vestibulum tortor lacus, bibendum et
+            enim eu, vehicula placerat erat. Nullam gravida rhoncus accumsan.
+            Integer suscipit iaculis elit nec mollis. Vestibulum eget arcu
+            nec lectus finibus rutrum vel sed orci.
+          </p>
+
+          <figure>
+            <amp-img class="full-bleed" placeholder
+                src="img/sea@1x.jpg"
+                srcset="img/sea@1x.jpg 1x, img/sea@2x.jpg 2x"
+                layout="responsive" width="360"
+                alt="Fusce pretium tempor justo, vitae consequat dolor maximus eget."
+                height="216">
+            </amp-img>
+            <figcaption>
+              Fusce pretium tempor justo, vitae consequat dolor maximus eget.
+            </figcaption>
+          </figure>
+
+
+
+          <hr>
+
+          <p>
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Nulla et viverra turpis. Fusce
+            viverra enim eget elit blandit, in finibus enim blandit. Integer
+            fermentum eleifend felis non posuere. In vulputate et metus at
+            aliquam. Praesent a varius est. Quisque et tincidunt nisi.
+            Nam porta urna at turpis lacinia, sit amet mattis eros elementum.
+            Etiam vel mauris mattis, dignissim tortor in, pulvinar arcu.
+            In molestie sem elit, tincidunt venenatis tortor aliquet sodales.
+            Ut elementum velit fermentum felis volutpat sodales in non libero.
+            Aliquam erat volutpat.
+          </p>
+          <p id="section2">
+            Morbi at velit vitae eros congue congue venenatis non dui.
+            Sed lacus sem, feugiat sed elementum sed, maximus sed lacus.
+            Integer accumsan magna in sagittis pharetra. Class aptent taciti
+            sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Suspendisse ac nisl efficitur ligula aliquam lacinia
+            eu in magna. Vestibulum non felis odio. Ut consectetur venenatis
+            felis aliquet maximus. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos.
+          </p>
+
+        
+        </div>
+      </div>
+
+      <hr class="main_hr" />
+
+<style>
+
+.previous_figure_thumb{
+	float: left;
+width: 60px;
+text-align: right;
+padding-right: 10px;
+
+}
+
+.previous_figure_thumb{
+	float: left;
+width: 60px;
+text-align: right;
+padding-right: 10px;
+
+}
+
+
+</style>
+
+<div class="next_and_previous_article_links">
+  <div class="previous_figure_thumb">
+  	          <figure>
+             <amp-img id="img_previous_article_thumb" src="https://lh4.googleusercontent.com/-okOlNNHeoOc/VbYyrlFYFII/AAAAAAABYdA/La-3j3c-QQI/w2004-h734-no/PANO_20150726_171347%257E2.jpg" width=60 height=40></amp-img>
+          </figure>
+
+  </div>
+  <div style="float: left;width: 180px;text-align: left;font-size: .8em;line-height: 14px;">
+  <span stlye="color:#333; font-size:0.7em;line-height:17px;">PREVIOUS ARTICLE</span><br/><a href="#" style="text-decoration: none; color: #000">SEVEN NEW CITY HOTELS TO BOOK</a></div>
+  <div id="article_text" style="float: left;width: 45%; text-align: center"><a href="#" style="text-decoration: none; color: #000"><br/>ARTICLES</a></div>
+
+    <div style="float: right;width: 60px;text-align: left;padding-left: 10px;">
+  	        <figure>
+            <amp-img id="img_next_article_thumb" src="https://lh4.googleusercontent.com/-okOlNNHeoOc/VbYyrlFYFII/AAAAAAABYdA/La-3j3c-QQI/w2004-h734-no/PANO_20150726_171347%257E2.jpg" width=60 height=40></amp-img>
+          </figure>
+  </div>
+
+  <div style="float: right;width: 180px;text-align: right;font-size: .8em;line-height: 14px;">
+  <span stlye="color:#333; font-size:0.7em;line-height:17px;">NEXT ARTICLE</span><br/>
+  <a href="#" style="text-decoration: none; color: #000">SEVEN NEW CITY HOTELS TO BOOK</a></div>
+
+
+</div>
+
+    <hr class="navigation_hr" style="margin-top: 40px" />
+
+
+<amp-iframe width=300 height=300
+      sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+      layout="responsive"
+      frameborder="0"
+      resizable
+            src="https://www.apotecari.com.au/amp.html#2583573">
+            <div overflow tabindex=0 role=button aria-label="Read more">Read more!</div>
+</amp-iframe>
+
+    </article>
+
+
+  </main>
+
+
+  <footer>
+    <div class="brand-logo">PublisherLogo</div>
+  </footer>
+
+    <amp-font
+    layout="nodisplay"
+    font-family="Cinzel Regular"
+    timeout="2000"
+    on-error-remove-class="as-amp-font-loading"
+    on-error-add-class="as-amp-font-missing"
+    on-load-remove-class="as-amp-font-loading"
+    on-load-add-class="as-amp-font-loaded">
+  </amp-font>
+  <amp-font
+    layout="nodisplay"
+    font-family="Neuton Light"
+    timeout="3000"
+    font-weight="bold"
+    on-error-remove-class="as-amp-bold-font-loading"
+    on-error-add-class="as-amp-bold-font-missing"
+    on-load-remove-class="as-amp-bold-font-loading"
+    on-load-add-class="as-amp-bold-font-loaded">
+  </amp-font>
+  <amp-font
+    layout="nodisplay"
+    font-family="Sackers Gothic Heavy"
+    timeout="3000"
+    on-error-remove-class="as-amp-heading-font-loading"
+    on-error-add-class="as-amp-heading-font-missing"
+    on-load-remove-class="as-amp-heading-font-loading"
+    on-load-add-class="as-amp-heading-font-loaded">
+  </amp-font>
+
+  <amp-font
+    layout="nodisplay"
+    font-family="Neuton Extralight"
+    timeout="3000"
+    on-error-remove-class="as-amp-extralight-font-loading"
+    on-error-add-class="as-amp-extralight-font-missing"
+    on-load-remove-class="as-amp-extralight-font-loading"
+    on-load-add-class="as-amp-extralight-font-loaded">
+  </amp-font>
+
+</body>
+</html>
